@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Mukta+Malar&display=swap');
+:root{
+  --gray:#04040A;
+  --dark: #16425B;
+  
+  --blue : #2F6690;
+  --navy-blue:#3A7CA5;
+  --light: #D9DCD6;
+  --LIGHT-Blue: #81C3D7;
+
+}
+body,h6,h5,h4,h3,h2,h1,p{
+  font-family: 'Mukta Malar', sans-serif;
+  margin: 0px;
+  padding: 0px;
+  color: black;
+}
+main{
+  background-color: var(--dark);
+  
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+  padding: 2rem;
+  min-height: calc(100vh - 4rem);
+}
+main > .card{
+width: 95vw;
+max-width:500px;
+background-color:white;
+padding: 0.5rem;
+border-radius: 5px;
+
+}
+.search > form > button{
+width: 5rem;
+background-color: var(--LIGHT-Blue);
+border: 2px solid var(--dark);
+border-style: solid;
+border-radius: 2px;
+cursor: pointer;
+transition: all 0.15s linear;
+}
+.search > form > button:hover{
+background-color: var(--navy-blue);
+color: white;
+}
+
+.search > form > input{
+  width: calc(100% - 6rem);
+  margin-right: 0.5rem;
+ 
+}
+.search > form > input:focus{
+  outline-color: var(--dark);
+}
+.detail > img{
+  border-radius: 50%;
+  width: 10rem;
+  margin: 0.5rem;
+  outline: 2px solid var(--navy-blue) ;
+  outline-offset: 4px;
+}
+
+.section-right{
+  display: inline-block;
+  margin: 2.3rem 0.5rem 0px ;
+  vertical-align: top;
+}
+.buttons{
+  display: flex;
+}
+.buttons > button{
+  width: 10rem;
+  padding: 0.5rem 0px;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  transition: all 0.15s linear;
+  border-radius: 2px;
+
+}
+.buttons > button > span{
+  display: block;
+  font-weight: bold;
+}
+.buttons > button:hover{
+  background-color: var(--navy-blue);
+  color: white;
+}
+.detail a{
+  color: var(--LIGHT-Blue);
+  text-decoration: none;
+}
+.detail a:visited {
+  color: var(--navy-blue);
+}
+.invalid{
+  color: red;
+}
+.incorrect-input{
+  outline-color: red !important ;
+  border-color: red !important ;
+  border-style: solid;
+}
+.repo-list  th{
+  text-align: left;
+}
+.following-list img, .followers-list img  {
+  margin-left: 1rem;
+  margin-top: 0.5rem;
+  width: 2rem;
+  border-radius: 50%;
+}
+
+.load-more button{
+width: 100%;
+padding:  5px 0px;
+background-color: transparent;
+border: none;
+cursor: pointer;
+transition: all 0.15s linear;
+}
+.load-more{
+  margin-top: -2.5rem;
+}
+.load-more button:hover{
+  background-color: var(--navy-blue);
+  color: white;
+  border: 2px solid var(--dark);
+
+}
+.active{
+  outline: 2px solid var(--dark) !important;
+}
+.footer {
+  text-align: center;
+}
